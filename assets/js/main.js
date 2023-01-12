@@ -19,13 +19,28 @@ form.addEventListener('submit', function (e) {
     }
 
     const bmi = getBMI(weight, height);
-
-    console.log(bmi);
+    const bmiLevel = getBMILevel(bmi);
+    const msg = `Seu IMC é ${bmi} (${bmiLevel}).`;
+    setResult(msg, true);
 });
 
 function getBMILevel(bmi) {
     const level = ['Abaixo do peso', 'Peso normal', 'Sobrepeso', 'Obesidade grau 1', 'Obesidade grau 2',
 'Obesidade grau 3'];
+
+    if (bmi >= 39.9) {
+        return level['5'];
+    } else if (bmi >= 34.9) {
+        return level['4'];
+    } else if (bmi >= 29.9) {
+        return level['3'];
+    } else if (bmi >= 24.9) {
+        return level['2'];
+    } else if (bmi >= 18.5) {
+        return level['1'];
+    } else if (bmi < 18.5) {
+        return level['0'];
+    }
 }
 
 function getBMI(weight, height) {
@@ -43,6 +58,13 @@ function setResult(msg, isValid) {
     result.innerHTML = '';
 
     const p = createP();
+
+    if (isValid) {
+        p.classList.add('valid-result');
+    } else {
+        p.classList.add('invalid-result');
+    }
+
     p.innerHTML = msg;
     result.appendChild(p);
 }

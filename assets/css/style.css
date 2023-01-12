@@ -16,10 +16,15 @@ body {
 
 .container {
     max-width: 640px;
+    height: 500px;
     margin: 50px auto;
     background-color: #ffff;
     padding: 25px;
     border-radius: 30px;
+}
+
+form label {
+    margin-left: 10px;
 }
 
 form input, form label, form button {
@@ -42,7 +47,8 @@ form input:focus {
 }
 
 form button {
-    margin-top: 30px;
+    margin-top: 50px;
+    margin-bottom: 30px;
     font-size: 24px;
     color: #ffff;
     background-color: #5689db;
@@ -58,7 +64,16 @@ form button:hover {
     background-color: #4070be;
 }
 
-.result-p {
-    background-color: #7fe27f;
-    padding: 20px;
+.valid-result, .invalid-result {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.valid-result {
+    color: #21a021;
+}
+
+.invalid-result {
+    color: #c92626;
 }

@@ -17,7 +17,7 @@ body {
 .container {
     max-width: 640px;
     height: 500px;
-    margin: 50px auto;
+    margin: 150px auto;
     background-color: #ffff;
     padding: 25px;
     border-radius: 30px;
@@ -66,8 +66,8 @@ form button:hover {
 
 .valid-result, .invalid-result {
     text-align: center;
-    font-weight: 600;
-    font-size: 1.1em;
+    font-weight: 500;
+    font-size: 1.2em;
 }
 
 .valid-result {

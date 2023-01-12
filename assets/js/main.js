@@ -9,12 +9,12 @@ form.addEventListener('submit', function (e) {
     const height = Number(inputHeight.value);
 
     if (!weight) {
-        setResult('Peso inválido', false);
+        setResult('⚠ Peso inválido', false);
         return;
     }
 
     if (!height) {
-        setResult('Altura inválida', false);
+        setResult('⚠ Altura inválida', false);
         return;
     }
 

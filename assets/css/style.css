@@ -3,13 +3,13 @@
 * {
     box-sizing: border-box;
     outline: 0;
+    font-family: Poppins, sans-serif;
 }
 
 body {
     background-color: #83b2ff;;
     padding: 0;
     margin: 0;
-    font-family: Poppins, sans-serif;
     font-size: 1.3em;
     line-height: 1.5em;
 }
@@ -24,24 +24,21 @@ body {
 
 form input, form label, form button {
     display: block;
-
-
     width: 100%;
     margin-bottom: 10px;
 }
 
 form input {
-    font-size: 24px;
+    font-size: 18px;
     height: 50px;
     padding: 0 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(231, 231, 231);
 }
 
 form input:focus {
-    outline: 1px solid #659df9;
-}
-
-form input:hover {
-    transition: 0.5s;
+    outline: 3px solid #659df9;
 }
 
 form button {
@@ -51,16 +48,17 @@ form button {
     background-color: #5689db;
     outline: none;
     border-radius: 20px;
+    border: none;
     height: 50px;
     cursor: pointer;
 }
 
 form button:hover {
-    transition: 0.5s;
+    transition: all 0.5s;
     background-color: #4070be;
 }
 
 .result-p {
     background-color: #7fe27f;
-    padding: 10px 20px;
+    padding: 20px;
 }

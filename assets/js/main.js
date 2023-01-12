@@ -23,6 +23,11 @@ form.addEventListener('submit', function (e) {
     console.log(bmi);
 });
 
+function getBMILevel(bmi) {
+    const level = ['Abaixo do peso', 'Peso normal', 'Sobrepeso', 'Obesidade grau 1', 'Obesidade grau 2',
+'Obesidade grau 3'];
+}
+
 function getBMI(weight, height) {
     const bmi = weight / height ** 2;
     return bmi.toFixed(2);
